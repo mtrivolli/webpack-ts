@@ -3,7 +3,7 @@ webpackConfig.resolve.extensions = ['', '.js', '.json']; // anything you need bu
 webpackConfig.module.loaders = [];
 
 var wallabyWebpack = require('wallaby-webpack');
-var webpackPostprocessor = wallabyWebpack(wallabyWebpack);
+var webpackPostprocessor = wallabyWebpack(webpackConfig);
 
 module.exports = function (wallaby) {
   return {
